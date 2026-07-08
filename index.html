@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<main class="container">
+
+    <h1>Contact Us</h1>
+
+    <form>
+
+        <div class="row">
+
+            <div class="input-box">
+                <label for="fname">First Name <span>*</span></label>
+                <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    required
+                >
+            </div>
+
+            <div class="input-box">
+                <label for="lname">Last Name <span>*</span></label>
+                <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    required
+                >
+            </div>
+
+        </div>
+
+        <div class="input-box">
+            <label for="email">Email Address <span>*</span></label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+            >
+        </div>
+
+        <fieldset>
+
+            <legend>Query Type <span>*</span></legend>
+
+            <div class="radio-group">
+
+                <label class="radio-box">
+                    <input
+                        type="radio"
+                        name="query"
+                        value="general"
+                        required
+                    >
+                    General Enquiry
+                </label>
+
+                <label class="radio-box">
+                    <input
+                        type="radio"
+                        name="query"
+                        value="support"
+                    >
+                    Support Request
+                </label>
+
+            </div>
+
+        </fieldset>
+
+        <div class="input-box">
+            <label for="message">Message <span>*</span></label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+            ></textarea>
+
+        </div>
+
+        <label class="checkbox">
+
+            <input
+                type="checkbox"
+                required
+            >
+
+            I consent to being contacted by the team <span>*</span>
+
+        </label>
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+</main>
+
+</body>
+</html>
